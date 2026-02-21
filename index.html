@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags Configuration -->
+    <title>ManzNews - Berita Terkini & IppoStore JB Terpercaya</title>
+    <meta name="description" content="ManzNews menyajikan berita terkini. Baca artikel utama kami tentang IppoStore, platform jual beli akun game dan jasa rekber (middleman) terpercaya di Indonesia.">
+    <meta name="keywords" content="ManzNews, IppoStore, Jual Beli Akun Game, Rekber Terpercaya, Muhammad Regi Nadira, Free Fire, Middleman, Berita Game">
+    <meta name="author" content="ManzNews">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manznews.com/">
+    <meta property="og:title" content="ManzNews - IppoStore JB Terpercaya">
+    <meta property="og:description" content="Sumber informasi terpercaya. Simak profil IppoStore, solusi aman transaksi game di Indonesia.">
+    <meta property="og:image" content="https://i.ibb.co.com/TDrZ4cj8/Whats-App-Image-2026-02-20-at-16-09-49.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ManzNews - IppoStore JB Terpercaya">
+    <meta name="twitter:description" content="Sumber informasi terpercaya. Simak profil IppoStore, solusi aman transaksi game di Indonesia.">
+    <meta name="twitter:image" content="https://i.ibb.co.com/TDrZ4cj8/Whats-App-Image-2026-02-20-at-16-09-49.jpg">
+
+    <!-- Favicon Configuration -->
+    <link rel="icon" href="https://i.ibb.co.com/3yZKrmYy/Bold-Manz-News-Logo-with-Newspaper-and-Microphone-Symbol.png" type="image/png">
+    <link rel="shortcut icon" href="https://i.ibb.co.com/3yZKrmYy/Bold-Manz-News-Logo-with-Newspaper-and-Microphone-Symbol.png" type="image/png">
+    
+    <!-- Structured Data (JSON-LD) for Google Search Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "IppoStore - JB Terpercaya dan Amanah",
+      "image": [
+        "https://i.ibb.co.com/TDrZ4cj8/Whats-App-Image-2026-02-20-at-16-09-49.jpg"
+      ],
+      "datePublished": "2024-02-20T08:00:00+07:00",
+      "dateModified": "2024-02-20T09:20:00+07:00",
+      "author": [{
+          "@type": "Person",
+          "name": "ManzNews",
+          "url": "https://manznews.com"
+        }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "ManzNews",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://i.ibb.co.com/3yZKrmYy/Bold-Manz-News-Logo-with-Newspaper-and-Microphone-Symbol.png"
+        }
+      },
+      "description": "IppoStore hadir sebagai platform terpercaya yang memberikan jaminan keamanan 100% bagi para gamer di Indonesia untuk jual beli dan jasa rekber."
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#DC2626', // Red-600
+                            dark: '#1F2937',
+                            light: '#F3F4F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .fade-in { animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #DC2626; border-radius: 4px; }
+        
+        /* Custom styles for article content */
+        .article-content a { color: #DC2626; text-decoration: underline; }
+        .article-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+        .article-content h3 { font-weight: 700; font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .article-content p { margin-bottom: 1rem; }
+        
+        img { cursor: pointer; transition: transform 0.2s; }
+        img:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center cursor-pointer" onclick="showSection('home')">
+                    <i class="fa-solid fa-newspaper text-brand-red text-2xl mr-2"></i>
+                    <h1 class="font-bold text-2xl tracking-tight text-gray-900 m-0 p-0">Manz<span class="text-brand-red">News</span></h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button onclick="showSection('home')" class="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition">Beranda</button>
+                    <button onclick="showSection('profile')" class="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition">Virtual Account</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        
+        <!-- HOME SECTION (Article Feed) -->
+        <div id="home-section" class="fade-in">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Selamat Datang di <span class="text-brand-red">ManzNews</span></h2>
+                <p class="text-gray-600 text-lg">Sumber informasi terpercaya dan terkini.</p>
+            </div>
+
+            <!-- Articles Grid -->
+            <!-- Note: Static HTML included here to ensure Google Crawlers can index the summary even without executing JS -->
+            <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Static Article Card 1: IppoStore -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 cursor-pointer flex flex-col h-full">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://i.ibb.co.com/TDrZ4cj8/Whats-App-Image-2026-02-20-at-16-09-49.jpg" alt="IppoStore - JB Terpercaya" class="w-full h-full object-cover transform hover:scale-105 transition duration-500 lightbox-trigger">
+                        <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4 pt-10 pointer-events-none">
+                            <span class="text-white text-xs font-bold bg-brand-red px-2 py-1 rounded">Terbaru</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow" onclick="openArticle(999)">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">IppoStore - JB Terpercaya</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Di tengah maraknya kasus penipuan transaksi digital, IppoStore hadir sebagai platform terpercaya yang memberikan jaminan keamanan 100% bagi para gamer di Indonesia...
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-400 mt-auto pt-4 border-t">
+                            <div class="flex items-center">
+                                <img src="https://i.ibb.co.com/3yZKrmYy/Bold-Manz-News-Logo-with-Newspaper-and-Microphone-Symbol.png" alt="ManzNews Avatar" class="w-6 h-6 rounded-full mr-2 object-cover">
+                                <span>ManzNews</span>
+                            </div>
+                            <span class="text-brand-red font-medium">Baca Selengkapnya &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- ARTICLE DETAIL SECTION -->
+        <div id="detail-section" class="hidden fade-in max-w-4xl mx-auto">
+            <button onclick="showSection('home')" class="mb-6 text-brand-red hover:underline flex items-center">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Beranda
+            </button>
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img id="detail-image" src="" alt="Article Image" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <!-- Author Info -->
+                    <div class="flex items-center mb-6 border-b pb-4">
+                        <div class="cursor-pointer">
+                            <img id="detail-author-img" src="" alt="Author" class="w-12 h-12 rounded-full border-2 border-brand-red object-cover mr-4">
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1"><i class="far fa-calendar-alt mr-1"></i> <span id="detail-date"></span></p>
+                            <p class="text-brand-red font-bold text-sm" id="detail-author-name">ManzNews</p>
+                        </div>
+                    </div>
+
+                    <h1 id="detail-title" class="text-3xl font-bold text-gray-900 mb-6">Title</h1>
+                    
+                    <!-- Content Body -->
+                    <div id="detail-content" class="article-content prose max-w-none text-gray-700 leading-relaxed">
+                        <!-- HTML Content injected here -->
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- PROFILE / VIRTUAL ACCOUNT SECTION -->
+        <div id="profile-section" class="hidden fade-in max-w-2xl mx-auto">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="border-b border-gray-200 pb-4 mb-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-gray-900">Virtual Account Anda</h2>
+                    <span class="bg-brand-red text-white text-xs px-2 py-1 rounded">User Mode</span>
+                </div>
+
+                <!-- Display Profile -->
+                <div id="profile-display" class="hidden text-center">
+                    <!-- Profile Picture Display -->
+                    <div class="mx-auto mb-4 w-32 h-32 relative">
+                        <img id="display-avatar" src="" class="w-32 h-32 rounded-full object-cover border-4 border-gray-100 shadow-sm hidden">
+                        <div id="default-avatar" class="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center text-4xl text-gray-500">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+
+                    <h3 id="display-name" class="text-2xl font-bold text-gray-900">Nama Pengguna</h3>
+                    <p id="display-bio" class="text-gray-600 mt-2 italic">"Bio pengguna akan muncul di sini"</p>
+                    
+                    <div class="mt-6 flex justify-center space-x-4">
+                        <a id="display-web" href="#" target="_blank" class="text-gray-500 hover:text-brand-red transition hidden">
+                            <i class="fa-solid fa-globe text-xl"></i>
+                        </a>
+                        <a id="display-social" href="#" target="_blank" class="text-gray-500 hover:text-brand-red transition hidden">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                    
+                    <button onclick="toggleProfileEdit(true)" class="mt-8 px-6 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 transition">
+                        Edit Profil
+                    </button>
+                </div>
+
+                <!-- Edit Profile Form -->
+                <form id="profile-form" onsubmit="saveProfile(event)" class="space-y-4">
+                    <!-- Photo Upload -->
+                    <div class="text-center mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Foto Profil</label>
+                        <div class="flex flex-col items-center">
+                            <div class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden mb-2 border border-gray-300">
+                                <img id="preview-avatar" class="w-full h-full object-cover hidden">
+                                <i id="preview-icon" class="fa-solid fa-camera text-gray-400 text-2xl"></i>
+                            </div>
+                            <input type="file" id="input-avatar" accept="image/*" onchange="previewImage(this)" class="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-brand-red hover:file:bg-red-100">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
+                        <input type="text" id="input-name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-red focus:ring focus:ring-red-200 focus:ring-opacity-50 p-2 border" placeholder="Masukkan nama anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Bio Singkat</label>
+                        <textarea id="input-bio" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-red focus:ring focus:ring-red-200 focus:ring-opacity-50 p-2 border" placeholder="Ceritakan sedikit tentang anda"></textarea>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Website URL</label>
+                            <input type="url" id="input-web" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-red focus:ring focus:ring-red-200 focus:ring-opacity-50 p-2 border" placeholder="https://...">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Sosial Media (Link)</label>
+                            <input type="url" id="input-social" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-red focus:ring focus:ring-red-200 focus:ring-opacity-50 p-2 border" placeholder="https://instagram.com/...">
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-brand-red text-white py-2 px-4 rounded-md hover:bg-red-700 transition font-semibold shadow-md">
+                            Simpan Profil
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-auto py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-2">Manz<span class="text-brand-red">News</span></h2>
+            <p class="text-gray-400 text-sm mb-4">Berita terkini, di terbitkan oleh ManzNews</p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <!-- Dynamic Year -->
+            <p class="text-gray-600 text-xs">&copy; <span id="current-year"></span> ManzNews. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal (Full Screen Image) -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black bg-opacity-95 hidden flex justify-center items-center p-4 backdrop-blur-sm transition-opacity duration-300" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-5xl font-bold hover:text-brand-red transition focus:outline-none">&times;</button>
+        <img id="lightbox-img" src="" alt="Full Screen" class="max-w-full max-h-screen rounded-md shadow-2xl object-contain transform transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+
+    <script>
+        // --- DATA MANAGEMENT ---
+        // Pre-defined static article (IppoStore)
+        // Note: The content of this article is also reflected in the HTML <body> to ensure SEO Crawlability
+        const staticArticles = [
+            {
+                id: 999, // Static ID
+                title: "IppoStore - JB Terpercaya",
+                image: "https://i.ibb.co.com/TDrZ4cj8/Whats-App-Image-2026-02-20-at-16-09-49.jpg",
+                author: "ManzNews",
+                authorAvatar: "https://i.ibb.co.com/3yZKrmYy/Bold-Manz-News-Logo-with-Newspaper-and-Microphone-Symbol.png",
+                date: new Date().toISOString(),
+                content: `
+                    <p>Di tengah maraknya kasus penipuan transaksi digital, <strong>IppoStore</strong> hadir sebagai platform terpercaya yang memberikan jaminan keamanan 100% bagi para gamer di Indonesia. Didirikan oleh <strong>Muhammad Regi Nadira</strong>, IppoStore fokus pada penyediaan layanan Middleman (Rekber) dan jual beli aset game yang transparan.</p>
+                    
+                    <h3>Mengapa Keamanan Transaksi Game itu Penting?</h3>
+                    <p>Banyak gamer kehilangan aset berharga karena transaksi sembarangan. Itulah alasan mengapa IppoStore menyediakan ekosistem yang solid melalui website resmi: <a href="https://ippostore.vercel.app" target="_blank">ippostore.vercel.app</a>.</p>
+
+                    <h3>Layanan Utama IppoStore:</h3>
+                    <ul>
+                        <li><strong>Jual/Beli Akun All Game:</strong> Tersedia akun berkualitas dengan proses verifikasi ketat.</li>
+                    </ul>
+                    
+                    <div class="my-6">
+                        <!-- Removed href wrapper to allow lightbox script to work -->
+                        <img src="https://i.ibb.co.com/TDrZ4cj8/Whats-App-Image-2026-02-20-at-16-09-49.jpg" alt="Logo IppoStore" class="w-full rounded-lg shadow-md cursor-pointer">
+                        <p class="text-center text-xs text-gray-500 mt-2">Logo IppoStore</p>
+                    </div>
+
+                    <ul>
+                        <li><strong>Jasa MC / Rekber (Middleman):</strong> Jasa perantara All Payment untuk menjamin uang Anda aman sampai barang diterima.</li>
+                        <li><strong>Admin Isian Free Fire:</strong> Layanan khusus untuk pemain setia FF.</li>
+                        <li><strong>Japost (Jasa Post):</strong> Solusi bagi Anda yang ingin akun dagangannya dipromosikan ke audiens yang tepat dan cepat laku.</li>
+                    </ul>
+
+                    <h3>Keunggulan Kami:</h3>
+                    <ul>
+                        <li><strong>100% Amanah:</strong> Reputasi adalah prioritas utama Muhammad Regi Nadira.</li>
+                        <li><strong>Fast Respon:</strong> Layanan pelanggan sigap melalui WhatsApp.</li>
+                        <li><strong>Kemudahan Pembayaran:</strong> Mendukung QRIS dan berbagai metode pembayaran lainnya (All Payment).</li>
+                    </ul>
+
+                    <h3>Kontak Layanan Pelanggan:</h3>
+                    <p>
+                        📲 <strong>WhatsApp:</strong> <a href="https://wa.me/6282195292297" target="_blank">0821-9529-2297</a><br>
+                        🌐 <strong>Website:</strong> <a href="https://ippostore.vercel.app" target="_blank">ippostore.vercel.app</a>
+                    </p>
+                `
+            }
+        ];
+
+        const getArticles = () => staticArticles; 
+        
+        const getProfile = () => JSON.parse(localStorage.getItem('manznews_profile'));
+        const saveUserProfile = (profile) => localStorage.setItem('manznews_profile', JSON.stringify(profile));
+
+        // --- NAVIGATION ---
+        function showSection(sectionId) {
+            // Hide all sections
+            ['home-section', 'detail-section', 'profile-section'].forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+
+            // Show target
+            if (sectionId === 'home') {
+                document.getElementById('home-section').classList.remove('hidden');
+                document.title = "ManzNews - Berita Terkini"; // Reset Title
+                // We don't need to re-render home completely as it's static now, 
+                // but if we had dynamic content we would call renderHome();
+            } else if (sectionId === 'profile') {
+                document.getElementById('profile-section').classList.remove('hidden');
+                document.title = "ManzNews - Virtual Account";
+                renderProfile();
+            } else if (sectionId === 'detail') {
+                document.getElementById('detail-section').classList.remove('hidden');
+            }
+            
+            window.scrollTo(0,0);
+        }
+
+        // --- HOME LOGIC ---
+        // Modified to work with static HTML for better SEO
+        function renderHome() {
+            // In a full dynamic app, this would fetch data. 
+            // Here, the HTML is hardcoded for SEO purposes, so we don't need to inject it via JS on load.
+            // However, if we added more articles dynamically, we would append them here.
+        }
+
+        function openArticle(id) {
+            const articles = getArticles();
+            const article = articles.find(a => a.id === id);
+            if (!article) return;
+
+            document.getElementById('detail-image').src = article.image;
+            document.getElementById('detail-title').innerText = article.title;
+            document.getElementById('detail-content').innerHTML = article.content;
+            
+            // Update Browser Title for better UX (though Search Engines use the static title)
+            document.title = article.title + " | ManzNews";
+
+            // Author Details
+            document.getElementById('detail-author-name').innerText = article.author;
+            document.getElementById('detail-author-img').src = article.authorAvatar;
+            document.getElementById('detail-date').innerText = new Date(article.date).toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            
+            showSection('detail');
+        }
+
+        // --- PROFILE LOGIC ---
+        function renderProfile() {
+            const profile = getProfile();
+            const displayDiv = document.getElementById('profile-display');
+            const form = document.getElementById('profile-form');
+            const displayAvatar = document.getElementById('display-avatar');
+            const defaultAvatar = document.getElementById('default-avatar');
+
+            if (profile) {
+                displayDiv.classList.remove('hidden');
+                form.classList.add('hidden');
+
+                document.getElementById('display-name').innerText = profile.name;
+                document.getElementById('display-bio').innerText = profile.bio || "Tidak ada bio.";
+                
+                if (profile.avatar) {
+                    displayAvatar.src = profile.avatar;
+                    displayAvatar.classList.remove('hidden');
+                    defaultAvatar.classList.add('hidden');
+                } else {
+                    displayAvatar.classList.add('hidden');
+                    defaultAvatar.classList.remove('hidden');
+                }
+
+                const webLink = document.getElementById('display-web');
+                if (profile.web) {
+                    webLink.href = profile.web;
+                    webLink.classList.remove('hidden');
+                } else {
+                    webLink.classList.add('hidden');
+                }
+
+                const socialLink = document.getElementById('display-social');
+                if (profile.social) {
+                    socialLink.href = profile.social;
+                    socialLink.classList.remove('hidden');
+                } else {
+                    socialLink.classList.add('hidden');
+                }
+
+                document.getElementById('input-name').value = profile.name;
+                document.getElementById('input-bio').value = profile.bio;
+                document.getElementById('input-web').value = profile.web;
+                document.getElementById('input-social').value = profile.social;
+
+            } else {
+                displayDiv.classList.add('hidden');
+                form.classList.remove('hidden');
+            }
+        }
+
+        function toggleProfileEdit(isEditing) {
+            if (isEditing) {
+                document.getElementById('profile-display').classList.add('hidden');
+                document.getElementById('profile-form').classList.remove('hidden');
+            }
+        }
+
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('preview-avatar');
+                    const icon = document.getElementById('preview-icon');
+                    preview.src = e.target.result;
+                    preview.classList.remove('hidden');
+                    icon.classList.add('hidden');
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function saveProfile(e) {
+            e.preventDefault();
+            
+            const processSave = (avatarData) => {
+                const profile = {
+                    name: document.getElementById('input-name').value,
+                    bio: document.getElementById('input-bio').value,
+                    web: document.getElementById('input-web').value,
+                    social: document.getElementById('input-social').value,
+                    avatar: avatarData 
+                };
+                
+                const oldProfile = getProfile();
+                if (!avatarData && oldProfile && oldProfile.avatar) {
+                    profile.avatar = oldProfile.avatar;
+                }
+
+                saveUserProfile(profile);
+                renderProfile();
+                alert("Profil Virtual Account berhasil disimpan!");
+            };
+
+            const fileInput = document.getElementById('input-avatar');
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    processSave(evt.target.result);
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                processSave(null);
+            }
+        }
+
+        // --- LIGHTBOX LOGIC ---
+        function setupLightbox() {
+            // Global Event Listener for ALL Images
+            document.body.addEventListener('click', function(e) {
+                // Check if target is an image
+                if (e.target.tagName === 'IMG') {
+                    // Prevent default behavior (like following a link if wrapped in <a>)
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const src = e.target.src;
+                    const lightbox = document.getElementById('lightbox');
+                    const lightboxImg = document.getElementById('lightbox-img');
+                    
+                    lightboxImg.src = src;
+                    lightbox.classList.remove('hidden');
+                }
+            });
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').innerText = new Date().getFullYear();
+            // renderHome() is no longer needed to inject content as it is hardcoded for SEO, 
+            // but we keep the function structure if needed later.
+            setupLightbox(); // Initialize lightbox listeners
+        });
+
+    </script>
+</body>
+</html>
